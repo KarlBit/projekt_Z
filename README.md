@@ -20,3 +20,9 @@
 --> Ein Projekt besitzter auf Github pro Gruppe, der das Projekt erstellt.
 --> Fügt alle Teilnehmer der Gruppe in das Repository hinzu, damit alle damit arbeiten   können.
 
+5. Arbeit mit github / terminal / gui Klienten 
+6. Download the Repository "Projekt_Z" 
+7. Aufbau einer Python Struktur
+8. Script Beispiele ("Klassen, Methoden, Variablen und deren Typen, Schleifen)
+9. Stein, Papier, Schere Code Beispiel
+10. Webserver Native Python 
