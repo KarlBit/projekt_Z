@@ -1,24 +1,14 @@
-# Dokumentation Repository Author Data 
-# Python Version 3.10
- 
-# Import der Bibliotheken
-import random
+# Import der Bibilotheken
 
-# Klassenstruktur
-
-# Logger
-# class Logger:
-
-class HelloWorld:
-    def __init__(self, name):   # Konstruktor Methode welche automatisch "init"ialisiert wird.
-        self.name = name
-
-    def hello(self):
-        print ("Hello World from " + self.name)  
+# Import eigener Module 
+from projekt_Z.webserver import start_server
+from projekt_Z.logger import log_error
 
 def main():
-    Josef = HelloWorld("Josef")   # Objekt Erstellung "Name"
-    Josef.hello()                # Methode 
+    try:
+        start_server()
+    except Exception as e:
+        log_error(f"Fehler beim Starten des Servers: {e}")
 
-if __name__ == "__main__":      # Can get called as a script but dif. from a module 
-    main()      
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,5 @@
+2024-03-22 11:28:40,396 - HTTP-Anfrage: GET / - Status: File not found
+2024-03-22 11:28:40,397 - HTTP-Anfrage: GET / - Status: 404
+2024-03-22 12:20:16,523 - HTTP-Anfrage: GET / - Status: File not found
+2024-03-22 12:20:16,524 - HTTP-Anfrage: GET / - Status: 404
+2024-03-22 12:33:26,866 - HTTP-Anfrage: GET / - Status: 200

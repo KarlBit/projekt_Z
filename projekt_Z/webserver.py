@@ -2,8 +2,15 @@ import http.server
 import socketserver
 import os
 
+from projekt_Z.logger import log_error, zugriff_logger
+from projekt_Z.config import config_data
+
 # Definieren des Verzeichnisses mit den HTML-Dateien
-document_root = "/data/html"
+try:
+    document_root = config_data.get("HTML_ROOT", "data/html")
+    f"Document root: {document_root}"
+except:
+    log_error("Error beim HTML ROOT")
 
 # Erstellen eines HTTP-Servers
 class Webserver(http.server.SimpleHTTPRequestHandler):
